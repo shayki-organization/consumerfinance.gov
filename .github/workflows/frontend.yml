@@ -4,6 +4,8 @@ on:
   merge_group:
   pull_request:
 
+  schedule:
+    - cron: "0 0 * * *"
 jobs:
   frontend:
     runs-on: ubuntu-latest
