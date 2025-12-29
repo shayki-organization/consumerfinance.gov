@@ -3,6 +3,8 @@ on:
   workflow_dispatch:
   pull_request:
   merge_group:
+  schedule:
+    - cron: "0 0 * * *"
 jobs:
   Veracode_SAST:
     runs-on:
